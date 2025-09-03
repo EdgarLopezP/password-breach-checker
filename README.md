@@ -11,3 +11,20 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python src/checker.py
 
+
+## ⚡ CLI avanzada
+
+Con la nueva interfaz de línea de comandos (Typer) puedes usar:
+
+### Comprobar una contraseña directamente
+```bash
+python -m src.checker check "perro123"
+
+
+### Ejemplos rápidos
+```bash
+python -m src.cli check "perro123"
+python -m src.cli check "perro123" --json-out
+python -m src.cli batch contraseñas.txt
+python -m src.cli batch contraseñas.txt --json-out
+
